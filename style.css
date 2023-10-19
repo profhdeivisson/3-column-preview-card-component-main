@@ -5,11 +5,16 @@
     font-family: Lexend Deca, sans-serif;
 }
 body{
-    padding: 120px 300px;
     background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
 }
 main{
     display: flex;
+    max-width: 80%;
 }
 h1{
     font-family: Big Shoulders Display;
@@ -53,18 +58,20 @@ button{
     border: 2px solid hsl(0, 0%, 95%);
     border-radius: 50px;
     padding: 10px 25px;
-    max-width: 60%;
+    max-width: 70%;
 }
 button:hover{
     background-color: hsl(0, 0%, 95%);
     cursor: pointer;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 800px){
     body{
-        padding: 60px 20px;
+        height: auto;
+        padding-top: 60px;
     }
     main{
         flex-direction: column;
+        max-width: 70vw;
     }
 }
